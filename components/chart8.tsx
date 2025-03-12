@@ -63,9 +63,8 @@ export function Chart8({ chartData }: { chartData: ChartData2[] }) {
           >
             <CartesianGrid horizontal={false} />
             <YAxis
-              width={250}
+              width={50}
               dataKey="label"
-              hide
               type="category"
               tickLine={false}
               tickMargin={5}
@@ -79,16 +78,9 @@ export function Chart8({ chartData }: { chartData: ChartData2[] }) {
             />
             <Bar dataKey="count" layout="vertical" radius={5}>
               <LabelList
-                dataKey="label"
-                position="insideLeft"
-                offset={10}
-                className="fill-card"
-                fontSize={12}
-              />
-              <LabelList
                 dataKey="count"
                 position="insideRight"
-                offset={10}
+                offset={3}
                 className="fill-card"
                 fontSize={12}
               />
