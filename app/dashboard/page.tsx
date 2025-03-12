@@ -26,7 +26,7 @@ import { ChartData2, Shifts, Year } from "@/types/data";
 export default async function Dashboard({
   searchParams,
 }: {
-  searchParams: { year: Year; shifts: Shifts };
+  searchParams: Promise<{ year: Year; shifts: Shifts }>;
 }) {
   const { year, shifts } = await searchParams;
   const data = await getData();
