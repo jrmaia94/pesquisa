@@ -121,6 +121,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground w-screen h-screen flex flex-col items-center;
+    @apply bg-background text-foreground w-full h-full flex flex-col items-center;
   }
 }

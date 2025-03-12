@@ -23,7 +23,7 @@ import { getDataForChart9 } from "@/dataHelpers/configChart9Data";
 import { getData } from "@/dataHelpers/configData";
 import { ChartData2, Shifts, Year } from "@/types/data";
 
-export default async function Dashboard({
+export default async function DashboardPage({
   searchParams,
 }: {
   searchParams: Promise<{ year: Year; shifts: Shifts }>;
