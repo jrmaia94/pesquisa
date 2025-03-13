@@ -62,19 +62,17 @@ export function Chart1({
             accessibilityLayer
             data={chartData}
             layout="vertical"
-            margin={{
-              left: 0,
-            }}
+            margin={{ left: 40 }}
           >
             <CartesianGrid horizontal={false} />
             <YAxis
-              width={200}
+              width={250}
               dataKey="material"
               type="category"
               tickLine={false}
               tickMargin={10}
+              fontSize={20}
               axisLine={false}
-              className="text-red-500"
               tickFormatter={(value) => value}
             />
             <XAxis dataKey="count" type="number" />
@@ -88,7 +86,7 @@ export function Chart1({
                 position="insideRight"
                 offset={5}
                 className="fill-card"
-                fontSize={12}
+                fontSize={20}
               />
             </Bar>
           </BarChart>

@@ -58,16 +58,17 @@ export function Chart8_1({ chartData }: { chartData: ChartData2[] }) {
             data={chartData}
             layout="vertical"
             margin={{
-              left: 0,
+              left: 20,
             }}
           >
             <CartesianGrid horizontal={false} />
             <YAxis
-              width={50}
+              width={100}
               dataKey="label"
               type="category"
               tickLine={false}
               tickMargin={5}
+              fontSize={20}
               axisLine={false}
               tickFormatter={(value) => value}
             />
@@ -82,7 +83,7 @@ export function Chart8_1({ chartData }: { chartData: ChartData2[] }) {
                 position="insideRight"
                 offset={10}
                 className="fill-card"
-                fontSize={12}
+                fontSize={20}
               />
             </Bar>
           </BarChart>

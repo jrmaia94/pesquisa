@@ -95,29 +95,41 @@ export default async function DashboardPage({
 
   return (
     <div className="flex w-full justify-center">
-      <div className="flex flex-col gap-2 p-2 w-[70%]">
-        <Chart1 chartData={dataForChart1} />
+      <div className="flex flex-col gap-2 p-2 w-[70%] print:w-full">
         <div className="flex gap-2">
-          <div className="w-80">
+          <div className="w-[50%]">
+            <Chart1 chartData={dataForChart1} />
+          </div>
+          <div className="w-[50%]">
             <Chart2 chartData={dataForChart2} />
           </div>
-          <div className="w-full">
-            <Chart3 chartData={dataForChart3} />
+        </div>
+        <Chart3 chartData={dataForChart3} />
+        <div className="flex gap-2 mt-72">
+          <div className="w-[50%]">
+            <Chart4 chartData={dataForChart4} />
+          </div>
+          <div className="w-[50%]">
+            <Chart5 chartData={dataForChart5} />
           </div>
         </div>
-        <Chart4 chartData={dataForChart4} />
-        <Chart5 chartData={dataForChart5} />
         <Chart6 chartData={dataForChart6} />
-        <Chart7 chartData={dataForChart7} />
         <div className="flex gap-2">
-          <div className="w-80">
+          <div className="w-[60%]">
+            <Chart7 chartData={dataForChart7} />
+          </div>
+          <div className="w-[40%]">
             <Chart8 chartData={dataForChart8} />
           </div>
-          <div className="w-full">
+        </div>
+        <div className="flex gap-2 mt-10">
+          <div className="w-[50%]">
             <Chart8_1 chartData={dataForChart8_1} />
           </div>
+          <div className="w-[50%]">
+            <Chart9 chartData={dataForChart9} />
+          </div>
         </div>
-        <Chart9 chartData={dataForChart9} />
         <Chart10 chartData={dataForChart10} />
       </div>
     </div>

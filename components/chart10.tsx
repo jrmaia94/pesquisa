@@ -86,14 +86,14 @@ export function Chart10({ chartData }: { chartData: ChartData2[] }) {
                 position="insideLeft"
                 offset={5}
                 className="fill-card"
-                fontSize={12}
+                fontSize={15}
               />
               <LabelList
                 dataKey="count"
                 position="insideRight"
                 offset={10}
                 className="fill-card"
-                fontSize={12}
+                fontSize={20}
               />
             </Bar>
           </BarChart>

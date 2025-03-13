@@ -67,6 +67,7 @@ export function Chart8({ chartData }: { chartData: ChartData2[] }) {
               dataKey="label"
               type="category"
               tickLine={false}
+              fontSize={15}
               tickMargin={5}
               axisLine={false}
               tickFormatter={(value) => value}
@@ -82,7 +83,7 @@ export function Chart8({ chartData }: { chartData: ChartData2[] }) {
                 position="insideRight"
                 offset={3}
                 className="fill-card"
-                fontSize={12}
+                fontSize={20}
               />
             </Bar>
           </BarChart>

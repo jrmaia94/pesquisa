@@ -47,7 +47,7 @@ const chartConfig = {
 
 export function Chart6({ chartData }: { chartData: ChartData2[] }) {
   return (
-    <Card>
+    <Card className="w-[80%]">
       <CardHeader>
         <CardTitle>6. Quais são os brinquedos preferidos da criança?</CardTitle>
       </CardHeader>
@@ -63,13 +63,13 @@ export function Chart6({ chartData }: { chartData: ChartData2[] }) {
           >
             <CartesianGrid horizontal={false} />
             <YAxis
-              width={250}
+              width={400}
               dataKey="label"
               type="category"
               tickLine={false}
-              tickMargin={5}
+              fontSize={15}
+              tickMargin={0}
               axisLine={false}
-              tickFormatter={(value) => value}
             />
             <XAxis dataKey="count" type="number" />
             <ChartTooltip
@@ -82,7 +82,7 @@ export function Chart6({ chartData }: { chartData: ChartData2[] }) {
                 position="insideRight"
                 offset={10}
                 className="fill-card"
-                fontSize={12}
+                fontSize={20}
               />
             </Bar>
           </BarChart>

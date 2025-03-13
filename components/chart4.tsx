@@ -71,6 +71,7 @@ export function Chart4({ chartData }: { chartData: ChartData2[] }) {
               type="category"
               tickLine={false}
               tickMargin={5}
+              fontSize={20}
               axisLine={false}
               tickFormatter={(value) => value}
             />
@@ -85,7 +86,7 @@ export function Chart4({ chartData }: { chartData: ChartData2[] }) {
                 position="insideRight"
                 offset={10}
                 className="fill-card"
-                fontSize={12}
+                fontSize={20}
               />
             </Bar>
           </BarChart>

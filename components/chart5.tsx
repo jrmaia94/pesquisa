@@ -63,11 +63,12 @@ export function Chart5({ chartData }: { chartData: ChartData2[] }) {
           >
             <CartesianGrid horizontal={false} />
             <YAxis
-              width={200}
+              width={350}
               dataKey="label"
               type="category"
               tickLine={false}
               tickMargin={5}
+              fontSize={15}
               axisLine={false}
               tickFormatter={(value) => value}
             />
@@ -82,7 +83,7 @@ export function Chart5({ chartData }: { chartData: ChartData2[] }) {
                 position="insideRight"
                 offset={10}
                 className="fill-card"
-                fontSize={12}
+                fontSize={20}
               />
             </Bar>
           </BarChart>

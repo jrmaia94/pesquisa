@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased p-2`}
       >
-        <div className="w-[70%]">
+        <div className="w-[70%] print:w-full">
           <Suspense>
             <HandleSelects />
           </Suspense>
